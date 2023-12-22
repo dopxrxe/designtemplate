@@ -1,0 +1,18 @@
+@font-face {
+    font-family: fontcustom1;
+    src: url('/assets/fonts/Apercu.otf');
+}
+
+@font-face {
+    font-family: fontcustom2;
+    src: url('/assets/fonts/SourceCodePro-Regular.ttf');
+}
+
+@font-face {
+    font-family: fontcustom3;
+    src: url('/assets/fonts/Poppins-Regular.ttf');
+}
+
+body {
+    font-family: fontcustom1;
+}
