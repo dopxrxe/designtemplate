@@ -9,8 +9,7 @@
 
         <!-- START: Cascading Style Sheets (CSS) -->
         <!-- Bootstrap -->
-        {{-- <link href="{{url('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet"> --}}
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+        <link href="{{url('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{url('assets/vendor/fontawesome-6.5.1/css/all.min.css')}}" rel="stylesheet">
         <link href="{{url('assets/build/css/styles.css')}}" rel="stylesheet">
         <!-- END: Cascading Style Sheets (CSS) -->
