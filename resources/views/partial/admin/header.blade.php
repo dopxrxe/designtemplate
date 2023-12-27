@@ -276,8 +276,16 @@ class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-
                             class="dropdown-item" href="app-kanban.html"><i class="ft-clipboard"></i> Todo</a><a
                             class="dropdown-item" href="user-cards.html"><i class="ft-check-square"></i>
                             Task</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                            href="login-with-bg-image.html"><i class="ft-power"></i> Logout</a>
+                        <div class="dropdown-divider"></div>
+                        <!-- Authentication -->
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <x-dropdown-link class="dropdown-item" :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
+                                <i class="ft-power"></i>
+                                {{ __('Log Out') }}
+                            </x-dropdown-link>
+                        </form>
                     </div>
                 </li>
             </ul>

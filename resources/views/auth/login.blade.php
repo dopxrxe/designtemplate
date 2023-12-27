@@ -4,6 +4,33 @@
 
     <form method="POST" action="{{ route('login') }}">
         @csrf
+        <div class="vh-100 bg-gray-300">
+            <div class="row g-0">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <div class="p-3 vh-100">
+                        <div class="p-5 bg-white h-100 d-flex flex-column justify-content-center align-items-center gap-2 rounded-4">
+                            <img src="{{url('/assets/images/logo/Logo-PTDI-x-INHAN.png')}}" class="mb-4" width="96" height="96" alt="">
+                            <h1 class="fw-semibold">
+                                Welcome back!
+                            </h1>
+                            <p>Please enter your details</p>
+                            <div class="w-100 mt-4">
+                                <x-forms.elements.inputemail type="email" id="email" name="email" class="" :value="__('Email')"/>
+                                <x-forms.elements.inputpassword type="password" id="password" name="password" class="" :value="__('Password')"/>
+                                <x-primary-button class="w-100 rounded-pill">{{ __('Log in') }}</x-primary-button>
+                                {{-- <a class="btn btn-dark rounded-pill w-100 fw-semibold" href="{{ route('login') }}">Log In</a> --}}
+                            </div>
+                            <p class="fw-lighter mt-5">Don't have an account? <a class="fw-semibold text-dark text-decoration-none" href="{{route('register')}}">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    {{-- <form method="POST" action="{{ route('login') }}">
+        @csrf
 
         <!-- Email Address -->
         <div>
@@ -43,5 +70,5 @@
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
-    </form>
+    </form> --}}
 </x-guest-layout>
