@@ -16,10 +16,15 @@
                             </h1>
                             <p>Please enter your details</p>
                             <div class="w-100 mt-4">
-                                <x-forms.elements.inputemail type="email" id="email" name="email" class="" :value="__('Email')"/>
-                                <x-forms.elements.inputpassword type="password" id="password" name="password" class="" :value="__('Password')"/>
+                                <div class="mb-4">
+                                    <x-forms.elements.inputemail type="email" id="email" name="email" class="" :label="__('Email')" :value="old('email')"/>
+                                    <x-input-error :messages="$errors->get('email')" class="" />
+                                </div>
+                                <div class="mb-4">
+                                    <x-forms.elements.inputpassword type="password" id="password" name="password" class="mb-4" :label="__('Password')" :value="old('password')"/>
+                                    <x-input-error :messages="$errors->get('password')" class="" />
+                                </div>
                                 <x-primary-button class="w-100 rounded-pill">{{ __('Log in') }}</x-primary-button>
-                                {{-- <a class="btn btn-dark rounded-pill w-100 fw-semibold" href="{{ route('login') }}">Log In</a> --}}
                             </div>
                             <p class="fw-lighter mt-5">Don't have an account? <a class="fw-semibold text-dark text-decoration-none" href="{{route('register')}}">Sign up</a></p>
                         </div>
