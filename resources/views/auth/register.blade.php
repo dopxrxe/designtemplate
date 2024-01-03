@@ -13,7 +13,7 @@
                                 Welcome
                             </h1>
                             <p>Register with your e-mail</p>
-                            <div class="w-100 mt-4">
+                            <div class="w-100 mt-2">
                                 <div class="mb-4">
                                     <x-forms.elements.inputname id="name" class="" type="text" name="name" :label="__('Name')" :value="old('name')"/>
                                     <x-input-error :messages="$errors->get('name')" class="" />
@@ -32,7 +32,7 @@
                                 </div>
                                 <x-primary-button class="w-100 rounded-pill">{{ __('Create Account') }}</x-primary-button>
                             </div>
-                            <p class="fw-lighter mt-5">Already registered? <a class="fw-semibold text-dark text-decoration-none" href="{{ route('register') }}">{{ __('Log in now') }}</a></p>
+                            <p class="fw-lighter mt-2">Already registered? <a class="fw-semibold text-dark text-decoration-none" href="{{ route('register') }}">{{ __('Log in now') }}</a></p>
                         </div>
                     </div>
                 </div>

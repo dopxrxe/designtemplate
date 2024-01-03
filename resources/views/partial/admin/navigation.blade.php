@@ -3,6 +3,20 @@
 <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
     <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+            <li class="{{ Request::segment(1) === 'admin' ? 'active' : null }} nav-item"><a href="{{ route('admin') }}"><i class="mbri-desktop"></i><span class="menu-title"
+                data-i18n="Dashboard">Dashboard</span></a>
+                {{-- <ul class="menu-content">
+                    <li><a class="menu-item" href="dashboard-ecommerce.html"><i
+                                class="la la-cart-plus"></i><span>eCommerce</span></a>
+                    </li>
+                    <li><a class="menu-item" href="dashboard-crypto.html"><i
+                                class="la la-sitemap"></i><span>Crypto</span></a>
+                    </li>
+                    <li class="active"><a class="menu-item" href="dashboard-sales.html"><i
+                                class="la la-dollar"></i><span>Sales</span></a>
+                    </li>
+                </ul> --}}
+            </li>
             <li class=" nav-item"><a href="#"><i class="mbri-edit"></i><span class="menu-title"
                         data-i18n="Forms">Forms</span></a>
                 <ul class="menu-content">
@@ -29,7 +43,7 @@
                             </li>
                             <li class="{{ Request::segment(1) === '' ? 'active' : null }}"><a class="menu-item" href="#"><i></i><span data-i18n="Select">Select</span></a>
                                 <ul class="menu-content">
-                                    <li class="{{ Request::segment(1) === 'admin' ? 'active' : null }}"><a class="menu-item" href="form-select2.html"><i></i><span
+                                    <li class="{{ Request::segment(3) === 'select' ? 'active' : null }}"><a class="menu-item" href="{{ route('form-select') }}"><i></i><span
                                                 data-i18n="Select2">Select2</span></a>
                                     </li>
                                     <li class="{{ Request::segment(1) === '' ? 'active' : null }}"><a class="menu-item" href="form-selectize.html"><i></i><span
@@ -54,7 +68,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="{{ Request::segment(1) === '' ? 'active' : null }}"><a class="menu-item" href="#"><i class="la la-file-text"></i><span
+                    {{-- <li class="{{ Request::segment(1) === '' ? 'active' : null }}"><a class="menu-item" href="#"><i class="la la-file-text"></i><span
                                 data-i18n="Form Layouts">Form Layouts</span></a>
                         <ul class="menu-content">
                             <li class="{{ Request::segment(1) === '' ? 'active' : null }}"><a class="menu-item" href="form-layout-basic.html"><i></i><span
@@ -96,7 +110,7 @@
                     </li>
                     <li class="{{ Request::segment(1) === '' ? 'active' : null }}"><a class="menu-item" href="form-repeater.html"><i class="la la-repeat"></i><span
                                 data-i18n="Form Repeater">Form Repeater</span></a>
-                    </li>
+                    </li> --}}
                 </ul>
             </li>
         </ul>
