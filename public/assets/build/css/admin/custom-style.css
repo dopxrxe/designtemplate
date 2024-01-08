@@ -1,0 +1,64 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    line-height: normal;
+}
+
+.p-25 {
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-box {
+    padding: 0.25em;
+    background-color: rgb(234, 235, 236);
+    border-radius: 10px;
+}
+
+.nav-box .nav-pills .nav-link {
+    border-radius: 10px !important;
+    /* background-color: white; */
+    /* color: black; */
+}
+
+.nav-pills .nav-link,
+.nav-pills .show>.nav-link {
+    color: #5c5c5c;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #111111;
+    background-color: white;
+}
+
+.wm-content {
+    width: max-content;
+}
+
+.hw-content {
+    height: max-content;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.code-box {
+    background-color: #1a1a1a;
+    position: relative;
+    padding: 1.5em;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.code-box a {
+    position: absolute;
+    right: 1.5em;
+    top: 1.5em;
+}

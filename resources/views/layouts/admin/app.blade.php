@@ -10,6 +10,10 @@
         <!-- START: Cascading Style Sheets (CSS) -->
             <!-- BEGIN: Vendor CSS-->
             <link rel="stylesheet" type="text/css" href="{{url('app-assets/vendors/css/vendors.min.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{url('app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{url('app-assets/vendors/css/forms/icheck/icheck.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{url('app-assets/vendors/css/forms/toggle/bootstrap-switch.min.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{url('app-assets/vendors/css/forms/toggle/switchery.min.css')}}">
             <!-- END: Vendor CSS-->
 
             <!-- BEGIN: Theme CSS-->
@@ -27,11 +31,16 @@
             <link rel="stylesheet" type="text/css" href="{{url('app-assets/vendors/css/charts/morris.css')}}">
             <link rel="stylesheet" type="text/css" href="{{url('app-assets/fonts/simple-line-icons/style.css')}}">
             <link rel="stylesheet" type="text/css" href="{{url('app-assets/css/core/colors/palette-gradient.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{url('app-assets/css/plugins/forms/validation/form-validation.css')}}">
+            <link rel="stylesheet" type="text/css" href="{{url('app-assets/css/plugins/forms/switch.css')}}">
             <!-- END: Page CSS-->
 
             
             <!-- fontawesome -->
             <link href="{{url('assets/vendor/fontawesome-6.5.1/css/all.min.css')}}" rel="stylesheet">
+
+            <!-- Custome Bootstrap -->
+            <link href="{{url('assets/build/css/admin/custom-style.css')}}" rel="stylesheet">
         <!-- END: Cascading Style Sheets (CSS) -->
     </head>
     <body class="vertical-layout vertical-compact-menu 2-columns fixed-navbar" data-open="click"
