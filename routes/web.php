@@ -22,9 +22,13 @@ Route::get('/admin', function () {
     return view('pages.admin.home');
 })->middleware(['auth', 'verified'])->name('admin');
 
-Route::get('/admin/form-select/select', function () {
+Route::get('/admin/form-elements/select', function () {
     return view('pages.admin.formelements.select');
 })->middleware(['auth', 'verified'])->name('form-select');
+
+Route::get('/admin/form-elements/inputs', function () {
+    return view('pages.admin.formelements.inputs');
+})->middleware(['auth', 'verified'])->name('form-inputs');
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/profile', [AdminController::class, 'edit'])->name('profile.edit');

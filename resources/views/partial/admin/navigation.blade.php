@@ -23,7 +23,7 @@
                     <li class="{{ Request::segment(1) === '' ? 'active' : null }}"><a class="menu-item" href="#"><i class="la la-terminal"></i><span
                                 data-i18n="Form Elements">Form Elements</span></a>
                         <ul class="menu-content">
-                            <li class="{{ Request::segment(1) === '' ? 'active' : null }}"><a class="menu-item" href="form-inputs.html"><i></i><span
+                            <li class="{{ Request::segment(1) === 'inputs' ? 'active' : null }}"><a class="menu-item" href="{{ route('form-inputs') }}"><i></i><span
                                         data-i18n="Form Inputs">Form Inputs</span></a>
                             </li>
                             <li class="{{ Request::segment(1) === '' ? 'active' : null }}"><a class="menu-item" href="form-input-groups.html"><i></i><span

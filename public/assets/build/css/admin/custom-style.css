@@ -50,11 +50,13 @@ h6 {
 }
 
 .code-box {
-    background-color: #1a1a1a;
+    background-color: rgb(234, 235, 236);
     position: relative;
     padding: 1.5em;
-    color: #fff;
+    color: #4b4b4b;
     border-radius: 8px;
+    overflow: auto;
+    max-height: 200px;
 }
 
 .code-box a {
