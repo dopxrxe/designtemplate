@@ -38,7 +38,8 @@
                                                                     <i class="fa-solid fa-user"></i>
                                                                 </span>
                                                             </div>
-                                                            <input type="text" maxlength="35" class="form-control" placeholder="Type here for text" aria-describedby="title-textinput">
+                                                            <x-forms.elements.inputtext type="text" id="text" name="text" class="form-control" :label="__('Type here for text')" :value="old('email')"/>
+                                                            {{-- <input type="text"  class="form-control" placeholder="Type here for text" > --}}
                                                         </div>
                                                     </fieldset>
                                                 </div>
@@ -113,7 +114,7 @@
                                                                     <i class="fa-solid fa-mobile-screen-button"></i>
                                                                 </span>
                                                             </div>
-                                                            <input type="tel" name="" id="" class="form-control" placeholder="0888 8888 8888" pattern="[0-9]{4}[0-9]{4}[0-9]{4}" maxlength="12">
+                                                            <x-forms.elements.telephone id="telephone" name="telephone" class="form-control" :label="__('0888 8888 8888')" :value="old('telephone')"/>
                                                         </div>
                                                     </fieldset>
                                                 </div>

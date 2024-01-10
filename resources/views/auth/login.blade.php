@@ -17,7 +17,7 @@
                             <p>Please enter your details</p>
                             <div class="w-100 mt-4">
                                 <div class="mb-4">
-                                    <x-forms.elements.inputemail type="email" id="email" name="email" class="" :label="__('Email')" :value="old('email')"/>
+                                    <x-forms.elements.inputemail type="email" id="email" name="email" class="form-control-sm border border-0 shadow-none border-bottom rounded-0" :label="__('Email')" :value="old('email')"/>
                                     <x-input-error :messages="$errors->get('email')" class="" />
                                 </div>
                                 <div class="mb-4">
