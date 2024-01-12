@@ -7,11 +7,11 @@
             </div>
             <div class="content-body">
                 <div class="row match-height">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title mb-1">Default Input text</h4>
-                                <p class="">Example of a basic input group with font awesome icons and validation</p>
+                                <p class="">Using input <code>type="text"</code> and <code>maxlength="35"</code> group with icon from fontawesome and validation</p>
                             </div>
 
                             <div class="card-body pt-0">
@@ -41,7 +41,6 @@
                                                                 </span>
                                                             </div>
                                                             <x-forms.elements.inputtext type="text" id="text" name="text" class="form-control" :label="__('Type here for text')" :value="old('email')"/>
-                                                            {{-- <input type="text"  class="form-control" placeholder="Type here for text" > --}}
                                                         </div>
                                                     </fieldset>
                                                 </div>
@@ -72,7 +71,8 @@
                                                                             <i class="fa-solid fa-font-awesome"></i>
                                                                         </span>
                                                                     </div>
-                                                                    <input type="text" maxlength="35" class="form-control" placeholder="Addon to Left" aria-describedby="basic-addon1">
+                                                                    <x-forms.elements.inputemail id="text" name="text" class="form-control" :label="__('text')" :value="old('text')"/>
+                                                                    {{-- <input type="text" maxlength="35" class="form-control" placeholder="Addon to Left" aria-describedby="basic-addon1"> --}}
                                                                 </div>
                                                             </fieldset>
                                                         </div>
@@ -87,11 +87,12 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
+
+                    <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title mb-1">Telephone Number</h4>
-                                <p class="">Example of a basic input group with font awesome icons and validation</p>
+                                <p class="">Using input <code>type="telephone"</code> with validation</p>
                             </div>
 
                             <div class="card-body pt-0">
@@ -145,11 +146,11 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title mb-1">Telephone Number</h4>
-                                <p class="">Example of a basic input group with font awesome icons and validation</p>
+                                <h4 class="card-title mb-1">Email</h4>
+                                <p class="">Using input<code>type="email"</code> group with icon from fontawesome and validation</p>
                             </div>
 
                             <div class="card-body pt-0">
@@ -180,6 +181,59 @@
                                                             <x-forms.elements.inputemail id="email" name="email" class="form-control" :label="__('text@example.com')" :value="old('email')"/>
                                                         </div>
                                                     </fieldset>
+                                                </div>
+                                                <p>Input with your email <code>@gmail.com</code> or other.</p>
+
+                                            </div>
+                                            {{-- END: Input Telpone Number --}}
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="input-telepon-code" role="tabpanel" aria-labelledby="input-telepon-code-tab">
+                                        <div class="code-box h-200">
+                                            <a class="btn-copy" data-clipboard-action="copy" data-clipboard-target="#inputtlp">
+                                                <i id="fa-copy" class="fa-regular fa-copy"></i>
+                                                <i id="fa-check" class="d-none fa-solid fa-check fa-lg text-success"></i>
+                                            </a>
+                                            <div id="inputtlp">
+                                                <p>1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title mb-1">Number</h4>
+                                <p class="">Using <code>input type="number"</code> group with icon from fontawesome and validation</p>
+                            </div>
+
+                            <div class="card-body pt-0">
+                                <div class="nav-box wm-content mb-1">
+                                    <ul class="nav nav-pills d-flex justify-content-between" id="pills-tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link p-25 active" id="input-telepon-preview-tab" data-toggle="pill" href="#input-telepon-preview" role="tab" aria-controls="input-telepon-preview" aria-selected="true"><p>Preview</p></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-25" id="input-telepon-code-tab" data-toggle="pill" href="#input-telepon-code" role="tab" aria-controls="input-telepon-code" aria-selected="false"><p>Code</p></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="pills-tabContent2">
+                                    <div class="tab-pane fade show active" id="input-telepon-preview" role="tabpanel" aria-labelledby="input-telepon-preview-tab">
+                                        <div class="h-200 d-flex align-items-center">
+                                            {{-- START: Input Telpone Number --}}
+                                            <div class="form-group w-100">
+                                                <h5 class="mb-1">Number</h5>
+                                                <div class="controls mb-1">
+                                                    <fieldset class="mb-1">
+                                                        <x-forms.elements.inputnumber id="number" name="number" class="form-control" :label="__('0')" :value="old('number')"/>
+                                                    </fieldset>
+                                                    <p>using <code>input type="number"</code></p>
                                                 </div>
                                             </div>
                                             {{-- END: Input Telpone Number --}}
